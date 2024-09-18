@@ -204,7 +204,7 @@ I'd love it if you could send me a note as to which app you're using it with! Th
 ## 更新
 在 xcode 16 上面运行， PingFoundation.h 文件出现报错 “Declaration of 'sa_family_t' must be imported from module 'Darwin.POSIX.sys.types._sa_family_t' before it is required”
 
-处理： 在 PingFoundation.h 中导出 #include <sys/socket.h>
+处理： 在 PingFoundation.h 中导入 #include <sys/socket.h>
 
 ## 关于版本
 当前项目使用的源码来自 pod 'RealReachability', '1.4.1'
